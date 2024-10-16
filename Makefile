@@ -1,27 +1,29 @@
-NAME	=	tbp
+NAME    = tbp
 
-CC		=	gcc
+CC      = gcc
 
-CFLAGS	=	-Wall -Wextra -Werror -std=c++14 -DGL_SILENCE_DEPRECATION -I3_body_problem/eigen
+CFLAGS  = -Wall -Wextra -Werror
 
-SRC		=	src/circle/circle.cpp src/physics/rk4_tbp.cpp src/tbp/tbp.cpp
-HEADER	=	src/circle/circle.hpp src/physics/rk4_tbp.hpp src/tbp/tbp.hpp
-LIBS	=	glfw/lib-arm64/libglfw3.a
-OBJ		=	$(SRC:.c=.o)
+SRC     = src/tbp.c
+HEADER  = src/tbp.h
+OBJ     = $(SRC:.c=.o)
+DBASE   = tbp.csv
+
+SDL2_FLAGS = `sdl2-config --cflags --libs`
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	$(CC) $(CFLAGS) $(OBJ) $(LIBS) -o $(NAME) $(OBJ)
+	$(CC) $(CFLAGS) $(OBJ) -o $(NAME) $(SDL2_FLAGS)
 
-%.o: %.c $(HEADER)
+%.o: src/%.c $(HEADER)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJ) 
+	rm -f $(OBJ) $(DBASE)
 
 fclean: clean
-	rm -f $(NAME)
+	rm -f $(NAME) $(DBASE)
 
 re: fclean all
 
