@@ -6,7 +6,7 @@
 /*   By: erian <erian@student.42>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 11:22:40 by erian             #+#    #+#             */
-/*   Updated: 2024/10/16 18:59:33 by erian            ###   ########.fr       */
+/*   Updated: 2024/10/16 21:03:36 by erian            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,13 +21,14 @@
 
 # define G				6.67430e-11	// Gravitational constant
 # define TIME_STEP		0.001		// Time step for the simulation
-# define STEPS			10000		// Number of steps in the simulation
+# define STEPS			12000		// Number of steps in the simulation
 # define Mass1			2e10		// Mass of body 1
 # define Mass2			2e10		// Mass of body 2
 # define Mass3			2e10		// Mass of body 3
 # define SCREEN_WIDTH	1200
 # define SCREEN_HEIGHT	800
 # define SCALE_FACTOR	0.1
+
 
 typedef struct	c_vector
 {
@@ -40,5 +41,10 @@ typedef struct	c_body
 	t_vector position;
 	t_vector velocity;
 }				t_body;
+
+void	run(t_vector *rA, t_vector *rB, t_vector *rC, t_vector *vA, t_vector *vB, t_vector *vC, FILE *file);
+void	visualize(t_vector *rA, t_vector *rB, t_vector *rC);
+double	norm(t_vector a);
+int		main(void);
 
 #endif

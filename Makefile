@@ -4,7 +4,7 @@ CC      = gcc
 
 CFLAGS  = -Wall -Wextra -Werror
 
-SRC     = src/tbp.c
+SRC     = src/tbp.c src/physics.c src/graphics.c
 HEADER  = src/tbp.h
 OBJ     = $(SRC:.c=.o)
 DBASE   = tbp.csv
