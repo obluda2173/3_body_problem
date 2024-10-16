@@ -25,6 +25,6 @@ This project already has a Makefile, this making it easy to run:
 ### Key Parameters
 - Mass1, Mass2, Mass3: Set the masses of the bodies in tbp.h.
 - TIME_STEP: Adjust the time step for numerical integration.
-You can modify the initial conditions in the code for different scenarios. The simulation also logs the positions and velocities to tbp.csv.
-To adjust the masses, positions, or velocities, edit the corresponding values in tbp.h and tbp.c.
+You can modify the initial conditions in the code for different scenarios. The simulation also logs the positions and velocities to tbp.csv.\n
+To adjust the masses, positions, or velocities, edit the corresponding values in tbp.h and tbp.c.\n
 You can also choose few option of bodies in tbp.c as well.
