@@ -6,7 +6,7 @@
 /*   By: erian <erian@student.42>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 20:29:26 by erian             #+#    #+#             */
-/*   Updated: 2024/10/16 21:06:01 by erian            ###   ########.fr       */
+/*   Updated: 2024/10/16 22:33:00 by erian            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,12 +78,12 @@ void visualize(t_vector *rA, t_vector *rB, t_vector *rC)
     }
 
     // Get the max simulation position to scale the coordinates
-    double max_simulation_value = get_max_position(rA, rB, rC);
+    double max_simulation_value = get_max_position(rA, rB, rC) + 0.05;
 
     // Simulation Loop
     SDL_Event e;
     int running = 1;
-    int size = 5; // Size of the body (radius)
+    int size = 7; // Size of the body (radius)
     int i = 1; // Start from the first step (after initial positions)
     
     while (running && i < STEPS)
