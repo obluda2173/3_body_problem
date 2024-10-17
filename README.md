@@ -15,7 +15,11 @@ This project simulates the three-body problem, visualizing how three celestial b
 - Install SDL2 on macOS via Homebrew:
 
 ### Hénon’s First Orbit:
-<img src="https://github.com/obluda2173/3_body_problem/blob/main/media/example_1.gif" width="40%" height="40%">
+<img src="https://github.com/obluda2173/3_body_problem/blob/main/media/stable_1.gif" width="100%" height="100%">
+### Chaotic example 1:
+<img src="https://github.com/obluda2173/3_body_problem/blob/main/media/chaotic_1.gif" width="100%" height="100%">
+### Chaotic example 2:
+<img src="https://github.com/obluda2173/3_body_problem/blob/main/media/chaotic_2.gif" width="100%" height="100%">
 
 ### How to run
 This project already has a Makefile, this making it easy to run:
