@@ -16,8 +16,10 @@ This project simulates the three-body problem, visualizing how three celestial b
 
 ### Hénon’s First Orbit:
 <img src="https://github.com/obluda2173/3_body_problem/blob/main/media/stable_1.gif" width="100%" height="100%">
+
 ### Chaotic example 1:
 <img src="https://github.com/obluda2173/3_body_problem/blob/main/media/chaotic_1.gif" width="100%" height="100%">
+
 ### Chaotic example 2:
 <img src="https://github.com/obluda2173/3_body_problem/blob/main/media/chaotic_2.gif" width="100%" height="100%">
 
