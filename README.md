@@ -29,7 +29,8 @@ This project simulates the three-body problem, a classic problem in physics wher
 This project includes a Makefile, making it easy to compile and run:
 - Run make to compile the program.
 - Execute the program with ./tbp
-**_NOTE:_** You might need to adjust the SDL2 library path in the tbp.h file depending on your SDL2 installation.
+
+> **_NOTE:_** You might need to adjust the SDL2 library path in the tbp.h file depending on your SDL2 installation.
 
 ### Key Parameters
 - Mass1, Mass2, Mass3: Set the masses of the bodies in tbp.h.
